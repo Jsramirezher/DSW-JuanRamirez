@@ -88,16 +88,51 @@ ul {
     display: block;
 }
 
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #005883;
+    height: auto;
+}
+
+#parrafo {
+    color: White;
+    font-family: Franklin Gothic Medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 0px;
+    padding: 5px;
+}
+
+#subtitulo {
+    color: #F0B429;
+    font-family: Franklin Gothic Book;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
 h2 {
     color: #F0B429;
     text-align: center;
-    font-family: Angsana New Bold;
+    font-family: Franklin Gothic Book;
 }
 
 .ini h2 {
     color: #F0B429;
     text-align: left;
-    font-family: Angsana New Bold;
+    font-family: Franklin Gothic Book;
 }
 
 #txt:hover {
