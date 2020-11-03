@@ -6,23 +6,20 @@
         <title>
             OVI Diseños de Sitios Web
         </title>
+        <link rel="icon" href="img/iconoIndex.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css "href="css/normalize.css">
     </head>
     <body>
-        <div class="header">
-            <img src="img/logoUNAD2.png" alt="imagen">
-            <h1>CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2>OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3>GRUPO: 301122_59</h3>    
-        </div>
-        
-        <div id = "menu">
+        <header>
+            <center><img src="img/logoUNAD2.png" alt="imagen"></center>
+            <h1 id = "titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+            <h2 id = "sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+            <h3 id = "trtitulo">GRUPO: 301122_59</h3>    
+        </header>
+        <nav class = "stinky">
             <ul>
-                <li>
-                    <a href="index.html" id = "txt" >INICIO</a>
-                </li>
-
+                <a href="index.html" id = "txt" >INICIO</a>
                 <li class="dropdown">
                     <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
                         <div class="dropdown-content">
@@ -30,105 +27,62 @@
                             <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
                         </div>
                 </li>
-
                 <li class="dropdown">
                     <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
                     <div class="dropdown-content">
-                        <a href="recurso1.html" id="txt1">MULTIMEDIA CSS3: ESTILOS EXTERNOS E INTERNOS</a>
-                        <a href="recurso2.html" id="txt1">MULTIMEDIA CSS3: SELECTORES</a>
+                        <a href="recurso1.html" id = "txt1">MULTIMEDIA CSS3: ESTILOS EXTERNOS E INTERNOS</a>
+                        <a href="recurso2.html" id = "txt1">MULTIMEDIA CSS3: SELECTORES</a>
                     </div>
                 </li>
-
-                <li>
                     <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
-                </li>
-
-                <li>
-                    <a href="autor.html" id="txt">AUTOR</a>
-                </li>
+                    <a href="autor.html" id = "txt">AUTOR</a>
             </ul>
-        </div>
-        
-        <section>
-            <h2>CSS3: ESTILOS EXTERNOS E INTERNOS</h2>
-            <h3 id="subtitulo">
-                Según la documentación Mozilla Development, establece a CSS3 como:
-            </h3>
-            <p id="parrafo">
-                CSS3 es la última evolución del lenguaje Cascading Style Sheets y tiene como objetivo extender CSS2.1. Trae una gran cantidad de novedades tan esperadas, como esquinas redondeadas, sombras, degradados, transiciones o animaciones, así como nuevos diseños como múltiples columnas, cajas flexibles o diseños de cuadrícula. Las partes experimentales tienen el prefijo del proveedor y deben evitarse en entornos de producción o usarse con extrema precaución, ya que tanto su sintaxis como su semántica pueden cambiar en el futuro.
-            </p>
-            <div class="drop">
-                <img src="img/diseño_web.jpg" alt="imagen" style="width:60%">
-                <p class="content">
-                    <a href="http://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank">CSS3: Mozilla Developer</a>
-                </p>
-            </div>
-            <h2 id="subtitulo">
-                CSS3: ESTILO INTERNO
-            </h2>
-            <p id="parrafo">
-                Cuando un estilo es propio de un único documento podría utilizarse una hoja de estilos interna, mediante la creación de una sección "STYLE" dentro de la cabecera del documento. Este es el método que se ha utilizado para mostrar los ejemplos particularizados que puedes consultar en las ventanas emergentes.<br>
-            </p>
-            <p id="parrafo">
-                Ten en cuenta que con este tipo de inclusión perdemos de vista una de las finalidades prioritarias de las hojas de estilo, ya que se mezcla en el mismo documento html las especificaciones referidas al formato con las marcas que sirven para estructurar el contenido. Sin embargo puede ser un primer paso para que compruebes la potencia de las hojas de estilo. 
-            </p>
-            <p id="parrafo">
-                Ahora se presenta la siguiente imagen, en donde se puede apreciar la estructura para identificar un estilo de CSS3 dentro del documento HTML o como se le conoce, Estilo Interno:
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_EstiloInterno.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en Bloc de Notas
-                </p>
-            </div>
-            <p id="parrafo">
-                Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_EstiloInterno2.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en el Navegador Opera
-                </p>
-            </div>
-
-            <h2 id="subtitulo">
-                CSS3: ESTILO EXTERNO
-            </h2>
-            <p id="parrafo">
-                Las hojas de estilos externas, son utilizadas para definir el estilo en varias páginas con el mismo archivo externo CSS, así es posible realizar cambios en este archivo y afectando su presentación incluso para todo el sitio web.
-            </p>
-            <p id="parrafo">
-                Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta "LINK" en la sección "HEAD" del documento HTML, cabe recalcar que para añadir este tipo de estilo CSS, se debe tener el documento en la misma carpeta local en donde se encuentra el documento HTML y demás elementos, como a continuación:
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_EstiloExterno.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en Bloc de Notas
-                </p>
-            </div>
-        </br>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_EstiloExterno1.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en Bloc de Notas
-                </p>
-            </div>
-            <p id="parrafo">
-                Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_EstiloExterno2.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en el navegador Opera
-                </p>
-            </div>
-
+        </nav>
+        <section id = "main">
+            <section id = "seccion">
+                <article>
+                    <h2>CSS3: ESTILOS EXTERNOS E INTERNOS</h2>
+                    <p id="parrafo">
+                        Según la documentación Mozilla Development, establece a CSS3 como:
+                    </p>
+                    <p id="parrafo">
+                        CSS3 es la última evolución del lenguaje Cascading Style Sheets y tiene como objetivo extender CSS2.1. Trae una gran cantidad de novedades tan esperadas, como esquinas redondeadas, sombras, degradados, transiciones o animaciones, así como nuevos diseños como múltiples columnas, cajas flexibles o diseños de cuadrícula. Las partes experimentales tienen el prefijo del proveedor y deben evitarse en entornos de producción o usarse con extrema precaución, ya que tanto su sintaxis como su semántica pueden cambiar en el futuro.
+                    </p>
+                    <img src="img/diseño_web.jpg" alt="imagen" style = "max-width:50%;height:auto;">
+                    <h2>CSS3: ESTILO INTERNO</h2>
+                    <p id="parrafo">
+                        Cuando un estilo es propio de un único documento podría utilizarse una hoja de estilos interna, mediante la creación de una sección "STYLE" dentro de la cabecera del documento. Este es el método que se ha utilizado para mostrar los ejemplos particularizados que puedes consultar en las ventanas emergentes.<br>
+                    </p>
+                    <p id="parrafo">
+                        Ten en cuenta que con este tipo de inclusión perdemos de vista una de las finalidades prioritarias de las hojas de estilo, ya que se mezcla en el mismo documento html las especificaciones referidas al formato con las marcas que sirven para estructurar el contenido. Sin embargo puede ser un primer paso para que compruebes la potencia de las hojas de estilo. 
+                    </p>
+                    <p id="parrafo">
+                        Ahora se presenta la siguiente imagen, en donde se puede apreciar la estructura para identificar un estilo de CSS3 dentro del documento HTML o como se le conoce, Estilo Interno:
+                    </p>
+                    <center><img src="img/ejemplo_CSS_EstiloInterno.PNG" alt="imagen" style="width:50%"></center>
+                    <p id="parrafo">
+                        Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
+                    </p>
+                    <center><img src="img/ejemplo_CSS_EstiloInterno2.PNG" alt="imagen" style="width:50%"></center>
+                    <h2>CSS3: ESTILO EXTERNO</h2>
+                    <p id="parrafo">
+                        Las hojas de estilos externas, son utilizadas para definir el estilo en varias páginas con el mismo archivo externo CSS, así es posible realizar cambios en este archivo y afectando su presentación incluso para todo el sitio web.
+                    </p>
+                    <p id="parrafo">
+                        Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta "LINK" en la sección "HEAD" del documento HTML, cabe recalcar que para añadir este tipo de estilo CSS, se debe tener el documento en la misma carpeta local en donde se encuentra el documento HTML y demás elementos, como a continuación:
+                    </p>
+                    <center><img src="img/ejemplo_CSS_EstiloExterno.PNG" alt="imagen" style="width:50%"></center>
+                    <center><img src="img/ejemplo_CSS_EstiloExterno1.PNG" alt="imagen" style="width:50%"></center>
+                    <p id="parrafo">
+                        Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
+                    </p>
+                    <center><img src="img/ejemplo_CSS_EstiloExterno2.PNG" alt="imagen" style="width:60%"></center>
+                </article>
+                <aside>
+                    <h2>RED SOCIAL INSTITUCIONAL - UNAD</h2>
+                    <a class="twitter-timeline"  width = "350" height = "500" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+                </aside>
+            </section>
         </section>
-
-
-        <div class="footer">
-            <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-        </div>
-
     </body>
 </html>
