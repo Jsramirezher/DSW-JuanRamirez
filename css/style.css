@@ -1,121 +1,138 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #005883;
-    margin: 0;
 }
 
-.header {
-    color: White;
+header{
+    display: block;
     image-orientation: flip;
     background-color: #b3b3b3;
-    padding: 20px;
-    text-align: center;
-}
+    padding: 10px;
+ }
 
-.header h1 {
-    font-size: 40px;
-    font-family: Franklin Gothic Heavy;
-}
+    #titulo {
+        font-size: 35px;
+        color: White;
+        font-family: Franklin Gothic Heavy;
+        text-align: center;
+    }
+    
+    #sbtitulo {
+        color: White;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+        font-family: Franklin Gothic Book;
+    }
+    
+    #trtitulo {
+        color: White;
+        text-align: center;
+        font-size: 25px;
+        font-family: Franklin Gothic Book;
+}    
 
-.header h2 {
-    color: White;
-    font-size: 30px;
-    padding: 20px;
-    font-family: Franklin Gothic Book;
-}
 
-.header h3 {
-    color: White;
-    font-size: 20px;
-    text-align: center;
-    font-family: Franklin Gothic Book;
-}
-
-ul {
-    list-style-type: none;
-    /*margin: 50px;*/
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-right: 110px;
-    margin-left: 40px;
-    padding: 20px;
-    overflow: hidden;
-    text-align: center;
-    background-color: #808080;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: #ddd;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-}
 
 article {
+    width: 50%;
+    padding-left: 10px;
+    margin-left: 10px;
     float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #005883;
     height: auto;
 }
 
-#parrafo {
+nav {
+    width: auto;
+    height: 50px;
+    background-color: #808080;
+ } 
+    nav ul {
+        text-align: center;
+        overflow: hidden;
+    }
+    #txt {
+        font-family: Franklin Gothic Medium;
+        padding: 14px 16px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+    li {
+        text-align: center;
+    }
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #ddd;
+    }
+    li.dropdown {
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+}    
+
+#main {
+    width: 100%;
+    height: auto;
+}
+
+#seccion {
+    width: auto;
+    margin: 15px;
+    min-height: 500px;
+    padding: 10px;
+    display: inline-block;
+}
+
+article {
+    width: 70%;
+    height: 250px;
+    padding: 10px;
+}
+
+article p {
+    padding-top: 10px;
     color: White;
     font-family: Franklin Gothic Medium;
     text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 0px;
 }
 
-#subtitulo {
+a {
+    float: rigth;
+}
+
+article h3{
     color: #F0B429;
     font-family: Franklin Gothic Book;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
     padding: 10px;
+    text-align: left;
 }
 
 @media (max-width: 600px) {
@@ -123,12 +140,16 @@ article {
         width: 100%;
         height: auto;
     }
-    aside {
-        display: inline-block;
-        width: 100%;
-        height: auto;
-    }
 }
+
+
+footer {
+    background-color: #808080;
+    padding: 10px;
+    text-align: center;
+}
+  
+
 
 h2 {
     color: #F0B429;
@@ -146,17 +167,13 @@ h2 {
     color:#F0B429;
 }
 
-#txt {
-    font-family: Franklin Gothic Medium;
-    color: white;
-}
 
 #txt1 {
     font-family: Franklin Gothic Medium;
     color: #F47920;
 }
 
-.footer {
+footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
