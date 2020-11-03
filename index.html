@@ -1,43 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content ="width=device-width, initial-scale=1">
         <title>
-            Fase 1: Compresion
+            OVI Diseños de Sitios Web
         </title>
-        <link rel="icon" href="iconoIndex.png">
-        <style>
-            body 
-            {
-                background-color: lightskyblue;
-                color: black;
-                font-family: Helvetica; 
-            }
-            strong
-            {
-                color: red;
-                font-family: Helvetica;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css "href="css/normalize.css">
     </head>
     <body>
-        <h1>
-            FASE 1: COMPRESIÓN - CONFIGURAR UN REPOSITORIO CON EL SCV GIT Y GITHUB
-        </h1>
-        <p>
-            El estudiante crea un archivo con el nombre index.html, con su nombre, programa, fecha de creación y datos de contacto, El archivo debe quedar ubicado en repositorio local de GITHUB y luego se debe sincronizar con el repositorio remoto (www.github.com).
-        </p>
-        <h2>
-            <a href="https://jsramirezher.github.io/DSW-JuanRamirez/planning.html" target="_blank">Acceder a la pagina Fase 2: Diseño</a>
-        </h2>
+        <div class="header">
+            <img src="img/logoUNAD2.png" alt="imagen">
+            <h1>CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+            <h2>OVI DISEÑOS DE SITIOS WEB</h2>
+            <h3>GRUPO: 301122_59</h3>    
+        </div>
+        
+        <div id = "menu">
+            <ul>
+                <li>
+                    <a href="index.html" id = "txt" >INICIO</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
+                        <div class="dropdown-content">
+                            <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
+                            <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
+                        </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
+                    <div class="dropdown-content">
+                        <a href="recurso1.html" id="txt1">MULTIMEDIA CSS3: ESTILOS EXTERNOS E INTERNOS</a>
+                        <a href="recurso2.html" id="txt1">MULTIMEDIA CSS3: SELECTORES</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
+                </li>
+
+                <li>
+                    <a href="autor.html" id="txt">AUTOR</a>
+                </li>
+            </ul>
+        </div>
+        
+        <section>
+            <article>
+                <h2>OBJETIVOS DEL SITIO</h2>
+                <p id="subtitulo">
+                    <strong>OBJETIVO GENERAL</strong> 
+                </p>
+                <p id="parrafo">
+                    Desarrollar el sitio web con formato HTML5, CSS3 entre otros sistemas, para involucrar tematicas de aprendizaje sobre: CSS3 - Estilos Internos y Externos y Selectores (Basicos y Avanzados) para la creación de un OVI solicitado por UNAD a la empresa htmldesign bajo el cargo del desarrollador web de la empresa.
+                </p>
+                <p id="subtitulo">
+                    <strong>OBJETIVOS ESPECIFICOS</strong>
+                </p>
+                <P>
+                    <ol type="I">
+                        <li id="parrafo">Dinamizar el aprendizaje virtual de la tematica Diseños de Sitios Web mediante la estrategia de Objetos Virtuales; Como: Objetos Virtuales de Aprendizaje (OVA) o Objetos Virtuales de Información (OVI).</li></br>
+                        <li id="parrafo">Planificar el proyecto OVI para ser presentando al cliente (UNAD) y la esquematización que se tendrá lugar en un sitio web creado a partir de HTML5, CSS3 y otras herramientas necesarias.</li></br>
+                        <li id="parrafo">Presentar mediante un borrador el contenido a ser visualizado en la pagina y en esta misma incluirse la maquetación del sitio (Mock-up) De igual manera, ser sincronizado en el repostorio creado y subir la pagina web para ser evaluada.</li></br>
+                    </ol>
+                </P>
+            </article>
+
+            <a class="twitter-timeline" data-width="350" data-height="450" data-dnt="true" href="https://twitter.com/UniversidadUNAD">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+
+
+        <div class="footer">
+            <p>Universidad Nacional Abierta y a Distancia UNAD</p>
+        </div>
     </body>
-    <script>
-        document.write("<strong>Nombre completo:</strong> Juan Sebastián Ramírez Hernández</br>");
-        document.write("<strong>Programa Academico:</strong> Ingeniería de Sistemas</br>");
-        document.write("<strong>Fecha de Creación:</strong> 05/09/2020</br>");
-        document.write("<strong>Datos de Contacto:</strong></br>");
-        document.write("<strong>1. Whatsapp:</strong> 3134297772</br>");
-        document.write("<strong>2. Correo:</strong> ramirezsebastian40@gmail.com</br>");
-        document.write("<strong>3. Skype:</strong> live:.cid.c9e49347b9a5317f</br>");
-    </script>
 </html>
