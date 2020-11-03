@@ -112,32 +112,41 @@ nav {
     margin: 15px;
     min-height: auto;
     padding: 10px;
-    display: inline-block;
 }
 
-article {
+#contenidos{
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+#paginaprincipal {
     width: 70%;
     height: 250px;
     padding: 10px;
- }
-    article p {
+}
+
+article p {
         padding-top: 10px;
         margin-bottom: 5px;
         color: White;
         font-family: Franklin Gothic Medium;
         text-align: justify;
-    }
-    .twitter-timeline {
+}
+
+.twitter-timeline {
         padding: 10px;
         float: right;
-    }
-    article img {
+}
+
+article img {
         height: 200px;
         float: none;
         padding-top: 10px;
         padding-bottom: 20px;
-    }
-    article h3{
+}
+
+article h3{
         color: #F0B429;
         font-family: Franklin Gothic Book;
         margin-top: 10px;
