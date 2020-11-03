@@ -6,31 +6,27 @@
         <title>
             OVI Diseños de Sitios Web
         </title>
+        <link rel="icon" href="img/iconoIndex.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css "href="css/normalize.css">
     </head>
     <body>
-        <div class="header">
-            <img src="img/logoUNAD2.png" alt="imagen">
-            <h1>CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2>OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3>GRUPO: 301122_59</h3>    
-        </div>
-        
-        <div id = "menu">
+        <header>
+            <center><img src="img/logoUNAD2.png" alt="imagen"></center>
+            <h1 id = "titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+            <h2 id = "sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+            <h3 id = "trtitulo">GRUPO: 301122_59</h3>    
+        </header>
+        <nav>
             <ul>
-                <li>
-                    <a href="index.html" id = "txt" >INICIO</a>
-                </li>
-
+                <a href="index.html" id = "txt" >INICIO</a>
                 <li class="dropdown">
                     <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
-                        <div class="dropdown-content">
-                            <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
-                            <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
-                        </div>
+                    <div class="dropdown-content">
+                        <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
+                        <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
+                    </div>
                 </li>
-
                 <li class="dropdown">
                     <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
                     <div class="dropdown-content">
@@ -38,26 +34,26 @@
                         <a href="recurso2.html" id="txt1">MULTIMEDIA CSS3: SELECTORES</a>
                     </div>
                 </li>
-
-                <li>
-                    <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
-                </li>
-
-                <li>
-                    <a href= "autor.html" id="txt">AUTOR</a>
-                </li>
+                <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
+                <a href= "autor.html" id="txt">AUTOR</a>
             </ul>
-        </div>
-        
-        <section>
-            <h2>AUTOEVALUACION</h2>
-            <p id="parrafo">
-                PRONTO NOS VEREMOS EN ESTA PAGINA CON SU FUNCIONALIDAD! GRACIAS POR SU PACIENCIA
-            </p>
+        </nav>
+        <section id = "main">
+            <section id = "seccion">
+                <article>
+                    <h2>AUTOEVALUACION</h2>
+                    <p id="parrafo">
+                        PRONTO NOS VEREMOS EN ESTA PAGINA CON SU FUNCIONALIDAD! GRACIAS POR SU PACIENCIA
+                    </p>    
+                </article>
+                <aside>
+                    <h2>RED SOCIAL INSTITUCIONAL - UNAD</h2>
+                    <a class="twitter-timeline"  width = "350" height = "500" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+                </aside>
+            </section>    
         </section>
-
-        <div class="footer">
+        <footer>
             <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-        </div>
+        </footer>
     </body>
 </html>

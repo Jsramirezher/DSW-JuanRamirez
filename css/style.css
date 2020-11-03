@@ -148,6 +148,10 @@ article {
     }
 }
 
+aside {
+    display: inline-block;
+}
+
 footer {
     background-color: #F0B429;
     padding: 10px;
