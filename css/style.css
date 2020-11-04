@@ -49,11 +49,6 @@ nav {
     height: 50px;
     background-color: #808080;
  } 
-    .stinky {
-        position: -webkit-sticky;
-        position: sticky;
-        width: 100%;
-    }
     nav ul {
         text-align: center;
         overflow: hidden;
@@ -208,7 +203,7 @@ h2 {
 
 
 h3 {
-    color: White;
+    color: #F0B429;
     padding: 10 px;
     text-align: left;
     font-family: Franklin Gothic Book;

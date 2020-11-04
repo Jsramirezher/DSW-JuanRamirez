@@ -10,19 +10,15 @@
         <link rel="stylesheet" type="text/css "href="css/normalize.css">
     </head>
     <body>
-        <div class="header">
+        <header>
             <img src="img/logoUNAD2.png" alt="imagen">
-            <h1>CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2>OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3>GRUPO: 301122_59</h3>    
-        </div>
-        
-        <div id = "menu">
+            <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+            <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+            <h3 id="trtitulo">GRUPO: 301122_59</h3>    
+        </header>
+        <nav>
             <ul>
-                <li>
-                    <a href="index.html" id = "txt" >INICIO</a>
-                </li>
-
+                <a href="index.html" id = "txt" >INICIO</a>
                 <li class="dropdown">
                     <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
                         <div class="dropdown-content">
@@ -30,7 +26,6 @@
                             <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
                         </div>
                 </li>
-
                 <li class="dropdown">
                     <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
                     <div class="dropdown-content">
@@ -38,87 +33,88 @@
                         <a href="recurso2.html" id="txt1">MULTIMEDIA CSS3: SELECTORES</a>
                     </div>
                 </li>
-
-                <li>
-                    <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
-                </li>
-
-                <li>
-                    <a href="autor.html" id="txt">AUTOR</a>
-                </li>
+                <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
+                <a href="autor.html" id="txt">AUTOR</a>
             </ul>
-        </div>
+        </nav>
         
-        <section>      
-            <h2>CSS3: SELECTORES CSS</h2>
-            <p id="parrafo">
-                Esta es la definicion de un CSS Selector:
-            </p>
-            <p id="parrafo">
-                Los selectores CSS se utilizan para seleccionar el contenido al que desea aplicar estilo. Los selectores son parte del conjunto de reglas CSS. Los selectores CSS seleccionan elementos HTML de acuerdo con su id, clase, tipo, atributo, etc. Hay varios tipos diferentes de selectores en CSS.
-            </p>
-            <h3 id="subtitulo">CSS Element Selector</h3>
-            <p id="parrafo">
-                El selector de elementos selecciona el elemento HTML por su nombre.
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_SelectorElement.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en Bloc de Notas
-                </p>
-            </div>
-            <p id="parrafo">
-                Al momento de visualizarse en el navegador se define lo siguiente:
-            </p>
-            <div class="drop">
-                <img src="img/ejemplo_CSS_SelectorElement2.PNG" alt="imagen" style="width:60%">
-                <p class="content">
-                    Hecha de Propia Autoria en el Navegador Opera
-                </p>
-            </div>
-            <h3 id="subtitulo">CSS Id Selector</h3>
-            <p id="parrafo">
-                El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
-                La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se utiliza para seleccionar un elemento único.
-                Para seleccionar un elemento con una identificación específica, escriba un carácter de almohadilla (#), seguido de la identificación del elemento.
-            </p>
-            <p>
-                IMAGEN AQUI - EJEMPLO NORMAL HTML CON CSS
-            </p>
-            <h3 id="subtitulo">CSS Class Selector</h3>
-            <p id="parrafo">
-                El selector de clases selecciona elementos HTML con un atributo de clase específico.
-                Para seleccionar elementos con una clase específica, escriba un punto (.), Seguido del nombre de la clase.
-            </p>
-            <p>
-                IMAGEN AQUI - EJEMPLO NORMAL HTML CON CSS
-            </p>
-            <h3 id="subtitulo">CSS Universal Selector</h3>
-            <p id="parrafo">
-                El selector universal (*) selecciona todos los elementos HTML de la página.
-            </p>
-            <p>
-                IMAGEN AQUI - EJEMPLO NORMAL HTML CON CSS
-            </p>
-            <h3 id="subtitulo">CSS Grouping Selector</h3>
-            <p id="parrafo">
-                El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo.
-            </p>
-            <p>
-                IMAGEN AQUI - EJEMPLO NORMAL HTML CON CSS
-            </p>
-            <P id="parrafo"> 
-                Será mejor agrupar los selectores para minimizar el código.
-                Para agrupar selectores, separe cada selector con una coma.
-            </P>
-            <h2>TABLA RESUMEN CSS3: SELECTORES CSS</h2>
-            <P>
-                IMAGEN AQUI
-            </P>
+        <section id="main">      
+            <section id="seccion">
+                <article id="contenidos">
+                    <h2>CSS3: SELECTORES CSS</h2>
+                    <p id="parrafo">
+                        Esta es la definicion de un CSS Selector:
+                    </p>
+                    <p id="parrafo">
+                        Los selectores CSS se utilizan para seleccionar el contenido al que desea aplicar estilo. Los selectores son parte del conjunto de reglas CSS. Los selectores CSS seleccionan elementos HTML de acuerdo con su id, clase, tipo, atributo, etc. Hay varios tipos diferentes de selectores en CSS.
+                    </p>
+                    <p id="parrafo">
+                        Podemos dividir los selectores de CSS en cinco categorías: Simple Selectors, Combinator Selectors, Pseudo-class Selectors, Pseudo-elements Selectors, Attribute Selectors.
+                    </p>
+                    <p>
+                        Principlamente en este OVI se enseñará la estructura, ejemplos y vídeos relacionados con los selectores simples, basicos o generales del mundo de CSS. Explicando: Element
+                        Selector, Id Selector, Class Selector, Universal Selector y Grouping Selector.
+                    </p>
+                    <h3 id="subtitulo">CSS Element Selector</h3>
+                    <p id="parrafo">
+                        El selector de elementos selecciona el elemento HTML por su nombre.
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorElement.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p id="parrafo">
+                        Al momento de visualizarse en el navegador se presenta lo siguiente:
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorElement2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <h3 id="subtitulo">CSS Id Selector</h3>
+                    <p id="parrafo">
+                        El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
+                        La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se utiliza para seleccionar un elemento único.
+                        Para seleccionar un elemento con una identificación específica, escriba un carácter de almohadilla (#), seguido de la identificación del elemento.
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorId.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p id="parrafo">
+                        Al momento de visualizarse en el navegador se presenta lo siguiente:
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorId2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p>
+                        <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante ID, no se debe empezar con números.
+                    </p>
+                    <h3 id="subtitulo">CSS Class Selector</h3>
+                    <p id="parrafo">
+                        El selector de clases selecciona elementos HTML con un atributo de clase específico.
+                        Para seleccionar elementos con una clase específica, escriba un punto (.), Seguido del nombre de la clase.
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorClass.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p id="parrafo">
+                        También se puede especificar que solo los elementos HTML específicos se vean afectados por una clase. Los elementos HTML también pueden hacer referencia a más de una clase.
+                    </p>
+                    <p id="parrafo">
+                        Al momento de visualizarse en el navegador se presenta lo siguiente:
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorClass2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p>
+                        <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante CLASS, no se debe empezar con números.
+                    </p>
+                    <h3 id="subtitulo">CSS Universal Selector</h3>
+                    <p id="parrafo">
+                        El selector universal (*) selecciona todos los elementos HTML de la página.
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorUniversal.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <p id="parrafo">
+                        Al momento de visualizarse en el navegador se presenta lo siguiente:
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorUniversal2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <h3 id="subtitulo">CSS Grouping Selector</h3>
+                    <p id="parrafo">
+                        El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo. Será mejor agrupar los selectores para minimizar el código. 
+                        Para agrupar selectores, separe cada selector con una coma.
+                    </p>
+                    <img src="img/ejemplo_CSS_SelectorGrouping.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <P id="parrafo"> 
+                        Al momento de visualizarse en el navegador se presenta lo siguiente:    
+                    </P>
+                    <img src="img/ejemplo_CSS_SelectorGrouping2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                </article>
+            </section>
         </section>
-
-        <div class="footer">
-            <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-        </div>
     </body>
 </html>
