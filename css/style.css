@@ -1,282 +1,129 @@
+/*ESTILO PARA TODO HTML*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/*ESTILO PARA HTML*/
 
+/*ESTILO PARA BODY*/
 body {
     background-color: #005883;
 }
+/*ESTILO PARA BODY*/
 
+/*ESTILO PARA HEADER*/
 header{
+    max-width: 100%;
+    min-height: auto;
+    margin: 0 auto;
     display: block;
     image-orientation: flip;
     background-color: #b3b3b3;
     padding: 10px;
- }
+}
 
-    #titulo {
-        font-size: 35px;
-        color: White;
-        font-family: Franklin Gothic Heavy;
-        text-align: center;
-    }
-    
-    #sbtitulo {
-        color: White;
-        font-size: 30px;
-        padding: 10px;
-        text-align: center;
-        font-family: Franklin Gothic Book;
-    }
-    
-    #trtitulo {
-        color: White;
-        text-align: center;
-        font-size: 25px;
-        font-family: Franklin Gothic Book;
-}    
+#logo {
+    width: auto;
+}
 
-article {
-    width: 50%;
-    padding-left: 20px;
-    margin-left: 20px;
-    float: left;
+.logo {
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav {
-    width: auto;
-    height: 50px;
-    background-color: #808080;
- } 
-    nav ul {
-        text-align: center;
-        overflow: hidden;
-    }
-    #txt {
-        font-family: Franklin Gothic Medium;
-        padding: 14px 16px;
-        font-size: 20px;
-        text-decoration: none;
-        color: white;
-    }
-    li {
-        text-align: center;
-    }
-    li a, .dropbtn {
-        display: inline-block;
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    li a:hover, .dropdown:hover .dropbtn {
-        background-color: #ddd;
-    }
-    li.dropdown {
-        display: inline-block;
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-    }
-    .dropdown-content a:hover {
-        background-color: #f1f1f1;
-    }
-    .dropdown:hover .dropdown-content {
-        display: block;
-}    
-
-#main {
-    width: auto;
-    height: auto;
-}
-
-#seccion {
-    width: auto;
-    margin: 15px;
-    min-height: auto;
-    padding: 10px;
-}
-
-#contenidos{
-    width: auto;
-    height: auto;
-    padding: 10px;
-}
-
-#paginaprincipal {
-    width: 70%;
-    height: 250px;
-    padding: 10px;
-}
-
-article p {
-    padding-top: 10px;
-    margin-bottom: 5px;
+#titulo {
+    font-size: 35px;
     color: White;
-    font-family: Franklin Gothic Medium;
-    text-align: justify;
-}
-
-.twitter-timeline {
-    padding: 10px;
-    float: right;
-}
-
-article img {
-    height: 200px;
-    float: none;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-article h3{
-    color: #F0B429;
-    font-family: Franklin Gothic Book;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: left;
-}
-
-@media (max-width: 600px) {
-    article {
-    width: 100%;
-    height: auto;
-    }
-}
-
-aside {
-    float: right;
-    z-index:  -1 !important;
-    padding: 10px;
-    margin-right: 30px;
-    position: absolute;
-    right: 0;
-}
-
-h2 {
-    color: #F0B429;
+    font-family: Franklin Gothic Heavy;
     text-align: center;
-    margin-bottom: 20px;
+}
+    
+#sbtitulo {
+    color: White;
+    font-size: 30px;
+    text-align: center;
     font-family: Franklin Gothic Book;
 }
-
-.ini h2 {
-    color: #F0B429;
-    text-align: left;
+    
+#trtitulo {
+    color: White;
+    text-align: center;
+    font-size: 25px;
     font-family: Franklin Gothic Book;
-}
+}    
+/*ESTILO PARA HEADER*/
 
-#txt:hover {
-    color:#F0B429;
-}
-
-
-#txt1 {
-    font-family: Franklin Gothic Medium;
-    color: #F47920;
-}
-
-
-h3 {
-    color: #F0B429;
-    padding: 10 px;
-    text-align: left;
-    font-family: Franklin Gothic Book;
-}
-
-img {
+/*ESTILO PARA MENU HORIZONTAL*/
+#menu-h {
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-.container {
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  
-  .text {
-    white-space: nowrap; 
-    color: white;
+    min-height: auto;
+    background-color: #808080;
+    font-family: Franklin Gothic Book;
     font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    margin: 0 auto;
+} 
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-
-.dpdown {
-    max-width: 100%;
-    height: auto;
+#menu-h a {
+    color: White;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-  }
-  
-  .dpdown-content {
-    display: none;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  
-  #pf {
-    color: #F47920;
+    padding: 20px;
     text-align: center;
-  }
+    background-color: #808080;
+    text-decoration: none;
+}
 
-  .dpdown:hover .dpdown-content {
+#menu-h a:hover {
+    background-color: #F47920;
+}
+
+#menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu-h ul li:hover ul {
     display: block;
 }
+/*ESTILO PARA MENU HORIZONTAL*/
+
+/*ESTILO PARA DESARROLLO DE CONTENIDO Y ASIDE PARA TWITTER*/
+#contenedor {
+    max-width: 100%;
+    min-height: auto;
+    margin: o auto;
+}
+
+#twitter {
+    width: 30%;
+    min-height: auto;
+    float: right;
+}
+
+#contenido {
+    width: 70%;
+    min-height: auto;
+    float: left;
+}
+/*ESTILO PARA DESARROLLO DE CONTENIDO Y ASIDE PARA TWITTER*/
+
+
+/*ESTILO PARA FOOTER*/
+footer {
+    max-width: 100%;
+    min-height: auto;
+    margin: 0 auto;
+    background-color: #F0B429;
+    display: block;
+}
+/*ESTILO PARA FOOTER*/
+
