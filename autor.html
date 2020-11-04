@@ -6,31 +6,27 @@
         <title>
             OVI Diseños de Sitios Web
         </title>
+        <link rel="icon" href="img/iconoIndex.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css "href="css/normalize.css">
     </head>
     <body>
-        <div class="header">
+        <header>
             <img src="img/logoUNAD2.png" alt="imagen">
-            <h1>CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2>OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3>GRUPO: 301122_59</h3>    
-        </div>
-        
-        <div id = "menu">
+            <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+            <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+            <h3 id="trtitulo">GRUPO: 301122_59</h3>    
+        </header>    
+        <nav>
             <ul>
-                <li>
-                    <a href="index.html" id = "txt" >INICIO</a>
-                </li>
-
+                <a href="index.html" id = "txt" >INICIO</a>
                 <li class="dropdown">
                     <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
-                        <div class="dropdown-content">
-                            <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
-                            <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
-                        </div>
+                    <div class="dropdown-content">
+                        <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
+                        <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
+                    </div>
                 </li>
-
                 <li class="dropdown">
                     <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
                     <div class="dropdown-content">
@@ -38,40 +34,41 @@
                         <a href="recurso2.html" id="txt1">MULTIMEDIA CSS3: SELECTORES</a>
                     </div>
                 </li>
-
-                <li>
-                    <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
-                </li>
-
-                <li>
-                    <a href="autor.html" id="txt">AUTOR</a>
-                </li>
+                <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
+                <a href="autor.html" id="txt">AUTOR</a>
             </ul>
-        </div>
-        
-        <section>
-            <h2>AUTOR</h2> 
-            <img src="img/fotoPerfil.png" alt="imagen" style="width:50%">
-            <p id="parrafo">
-                Nombre: Juan Sebastian Ramirez Hernandez
-            </p>
-            <p id="parrafo"> 
-                Código: 1007576037
-            </p>
-            <p id="parrafo">
-                Programa: Ingeniería de Sistemas
-            </p>
-            <p id="parrafo"> 
-                Correo Electrónico Institucional: jsramirezher@unadvirtual.edu.co
-            </p>
-            <p id="parrafo">
-                Skype: live:.cid.c9e49347b9a5317f
-            </p>
-
-        </section>
-
-        <div class="footer">
-            <p>Universidad Nacional Abierta y a Distancia UNAD</p>
-        </div>
-    </body>
+        </nav>    
+        <section id = "main">
+            <section id = "seccion">
+                <article id="paginaprincipal">
+                    <h2>AUTOR</h2>
+                    <p>
+                        Nombre: Juan Sebastian Ramirez Hernandez
+                    </p>
+                    <p>
+                        Código: 1007576037
+                    </p>
+                    <p>
+                        Programa Academico: Ingeniería de Sistemas
+                    </p>
+                    <p>
+                        Correo Electrónico: ramirezsebastian40@gmail.com
+                    </p>
+                    <p>
+                        Skype: live:.cid.c9e49347b9a5317f
+                    </p>
+                    <div class="container">
+                        <img src="img/fotoPerfil.png" alt="imagen" class = "image" >
+                        <div class="overlay">
+                          <div class="text">¡HOLA! SOY SEBASTIAN =)</div>
+                        </div>
+                    </div>    
+                </article>
+                <aside>
+                    <h2>RED SOCIAL INSTITUCIONAL - UNAD</h2>
+                    <a class="twitter-timeline"  width = "350" height = "500" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+                </aside>
+            </section>
+        </section> 
+</body>
 </html>

@@ -122,37 +122,37 @@ nav {
 }
 
 article p {
-        padding-top: 10px;
-        margin-bottom: 5px;
-        color: White;
-        font-family: Franklin Gothic Medium;
-        text-align: justify;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    color: White;
+    font-family: Franklin Gothic Medium;
+    text-align: justify;
 }
 
 .twitter-timeline {
-        padding: 10px;
-        float: right;
+    padding: 10px;
+    float: right;
 }
 
 article img {
-        height: 200px;
-        float: none;
-        padding-top: 10px;
-        padding-bottom: 20px;
+    height: 200px;
+    float: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 article h3{
-        color: #F0B429;
-        font-family: Franklin Gothic Book;
-        margin-top: 10px;
-        padding: 10px;
-        text-align: left;
+     color: #F0B429;
+    font-family: Franklin Gothic Book;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: left;
 }
 
 @media (max-width: 600px) {
     article {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
     }
 }
 
@@ -169,12 +169,13 @@ footer {
     background-color: #F0B429;
     text-align: center;
     padding: 10px;
- }
-    footer p {
-        font-family: Franklin Gothic Medium;
-        padding: 14px 16px;
-        font-size: 20px;
-        text-decoration: none;
+}
+
+footer p {
+    font-family: Franklin Gothic Medium;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 
@@ -220,5 +221,48 @@ img {
 video {
     width: 100%;
     height: auto;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
