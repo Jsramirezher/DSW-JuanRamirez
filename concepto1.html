@@ -19,37 +19,50 @@
         </header>
         <nav class = "stinky">
             <ul>
-                <a href="index.html" id = "txt" >INICIO</a>
+                <a href="index.html" id = "txt" >Inicio</a>
                 <li class="dropdown">
-                    <a href="" id = "txt" class="dropbtn">CONTENIDOS</a>
+                    <a href="" id = "txt" class="dropbtn">Contenidos</a>
                         <div class="dropdown-content">
-                            <a href="concepto1.html" id = "txt1">CSS3: ESTILOS EXTERNOS E INTERNOS</a>
-                            <a href="concepto2.html" id = "txt1">CCS3: SELECTORES</a>
+                            <a href="concepto1.html" id = "txt1">CSS3: Estilo Interno y Externo</a>
+                            <a href="concepto2.html" id = "txt1">CCS3: Selectores</a>
                         </div>
                 </li>
                 <li class="dropdown">
-                    <a href="recursos.html" id = "txt" class="dropbtn">RECURSOS MULTIMEDIA</a>
+                    <a href="recursos.html" id = "txt" class="dropbtn">Recursos Multimedia</a>
                     <div class="dropdown-content">
-                        <a href="recurso1.html" id = "txt1">MULTIMEDIA CSS3: ESTILOS EXTERNOS E INTERNOS</a>
-                        <a href="recurso2.html" id = "txt1">MULTIMEDIA CSS3: SELECTORES</a>
+                        <a href="recurso1.html" id = "txt1">CSS3 Multimedia: Estilo Interno y Externo</a>
+                        <a href="recurso2.html" id = "txt1">CSS3 Multimedia: Selectores</a>
                     </div>
                 </li>
-                    <a href="autoevaluacion.html" id = "txt">AUTOEVALUACION</a>
-                    <a href="autor.html" id = "txt">AUTOR</a>
+                    <a href="autoevaluacion.html" id = "txt">Autoevaluacion</a>
+                    <a href="autor.html" id = "txt">Autor</a>
             </ul>
         </nav>
         <section id = "main">
             <section id = "seccion">
                 <article id="contenidos">
-                    <h2>CSS3: ESTILOS EXTERNOS E INTERNOS</h2>
+                    <h2>CSS3: Estilo Interno y Externo</h2>
                     <p>
                         Según la documentación Mozilla Development, establece a CSS3 como:
                     </p>
-                    <p>
-                        CSS3 es la última evolución del lenguaje Cascading Style Sheets y tiene como objetivo extender CSS2.1. Trae una gran cantidad de novedades tan esperadas, como esquinas redondeadas, sombras, degradados, transiciones o animaciones, así como nuevos diseños como múltiples columnas, cajas flexibles o diseños de cuadrícula. Las partes experimentales tienen el prefijo del proveedor y deben evitarse en entornos de producción o usarse con extrema precaución, ya que tanto su sintaxis como su semántica pueden cambiar en el futuro.
-                    </p>
-                    <img src="img/diseño_web.jpg" alt="imagen" style = "max-width:50%;height:auto;">
-                    <h2>CSS3: ESTILO INTERNO</h2>
+                    <div class="dpdown">
+                        <p>
+                            CSS3 es la última evolución del lenguaje Cascading Style Sheets y tiene como objetivo extender CSS2.1. Trae una gran cantidad de novedades tan esperadas, 
+                            como esquinas redondeadas, sombras, degradados, transiciones o animaciones, así como nuevos diseños como múltiples columnas, cajas flexibles o diseños de cuadrícula. 
+                            Las partes experimentales tienen el prefijo del proveedor y deben evitarse en entornos de producción o usarse con extrema precaución, ya que tanto su sintaxis como 
+                            su semántica pueden cambiar en el futuro.
+                        </p>
+                        <div class="dpdown-content">
+                        <p id="pf">MDN contributors. (19 de Abril de 2020). CSS3. Obtenido de MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank">https://developer.mozilla.org/en-US/docs/Archive/CSS3</a></p>
+                        </div>
+                    </div>
+                    <div class="dpdown">
+                        <img src="img/diseño_web.jpg" alt="imagen" style = "max-width:50%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Imagen gratuita encontrada en: <a href="http://pixabay.com/es/" target="_blank">Banco de Imagenes Pixabay</a></p>
+                        </div>
+                    </div>
+                    <h2>CSS3: Estilo Interno</h2>
                     <p>
                         Cuando un estilo es propio de un único documento podría utilizarse una hoja de estilos interna, mediante la creación de una sección "STYLE" dentro de la cabecera del documento. Este es el método que se ha utilizado para mostrar los ejemplos particularizados que puedes consultar en las ventanas emergentes.<br>
                     </p>
@@ -59,24 +72,49 @@
                     <p>
                         Ahora se presenta la siguiente imagen, en donde se puede apreciar la estructura para identificar un estilo de CSS3 dentro del documento HTML o como se le conoce, Estilo Interno:
                     </p>
-                    <img src="img/ejemplo_CSS_EstiloInterno.PNG" alt="imagen" style = "max-width:75%;height:auto;">
+                    <div class="dpdown">
+                        <img src="img/ejemplo_CSS_EstiloInterno.PNG" alt="imagen" style = "max-width:75%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Estructura Estilo Interno dentro HTML (Propia Autoría)</p>
+                        </div>
+                    </div>
                     <p>
                         Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
                     </p>
-                    <img src="img/ejemplo_CSS_EstiloInterno2.PNG" alt="imagen" style = "max-width:75%;height:auto;">
-                    <h2>CSS3: ESTILO EXTERNO</h2>
+                    <div class="dpdown">
+                        <img src="img/ejemplo_CSS_EstiloInterno2.PNG" alt="imagen" style = "max-width:75%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Visualizacion de Estilos agregados al documento HTML (Propia Autoría)</p>
+                        </div>
+                    </div>
+                    <h2>CSS3: Estilo Externo</h2>
                     <p>
                         Las hojas de estilos externas, son utilizadas para definir el estilo en varias páginas con el mismo archivo externo CSS, así es posible realizar cambios en este archivo y afectando su presentación incluso para todo el sitio web.
                     </p>
                     <p>
                         Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta "LINK" en la sección "HEAD" del documento HTML, cabe recalcar que para añadir este tipo de estilo CSS, se debe tener el documento en la misma carpeta local en donde se encuentra el documento HTML y demás elementos, como a continuación:
                     </p>
-                    <img src="img/ejemplo_CSS_EstiloExterno.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                    <img src="img/ejemplo_CSS_EstiloExterno1.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <div class="dpdown">
+                        <img src="img/ejemplo_CSS_EstiloExterno.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Estructura Estilo Externa en codigo CSS (Propia Autoría)</p>
+                        </div>
+                    </div>
+                    <div class="dpdown">
+                        <img src="img/ejemplo_CSS_EstiloExterno1.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Estructura Estilo Externa incrustado dentro de HTML (Propia Autoría)</p>
+                        </div>
+                    </div>
                     <p>
                         Esto es lo que se puede apreciar a abrir el documento HTML en el navegador:
                     </p>
-                    <img src="img/ejemplo_CSS_EstiloExterno2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                    <div class="dpdown">
+                        <img src="img/ejemplo_CSS_EstiloExterno2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                        <div class="dpdown-content">
+                        <p id="pf">Visualizacion de Estilos agregados al documento HTML (Propia Autoría)</p>
+                        </div>
+                    </div>
                 </article>
             </section>
         </section>
