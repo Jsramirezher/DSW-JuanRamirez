@@ -111,6 +111,24 @@ header{
     margin: o auto;
 }
 
+#pcontenedor {
+    max-width: 100%;
+    min-height: 3200px;
+    margin: o auto;
+}
+
+#p2contenedor {
+    max-width: 100%;
+    min-height: 4950px;
+    margin: o auto;
+}
+
+#p3contenedor {
+    max-width: 100%;
+    min-height: 1200px;
+    margin: o auto;
+}
+
 #twitter {
     width: 20%;
     padding: 20px;
@@ -250,7 +268,6 @@ header{
 /*ESTILO PARA FOOTER*/
 footer {
     max-width: 100%;
-    max-height: auto;
     margin: 0 auto;
     background-color: #F0B429;
     text-align: center;

@@ -1,49 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content ="width=device-width, initial-scale=1">
-        <title>
-            OVI Diseños de Sitios Web
-        </title>
-        <link rel="icon" href="img/iconoIndex.png">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css "href="css/normalize.css">
-    </head>
-    <body>
-        <header>
-            <img src="img/logoUNAD2.png" alt="imagen">
-            <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3 id="trtitulo">GRUPO: 301122_59</h3>    
-        </header>
-        <nav>
-            <ul>
-                <a href="index.html" id = "txt" >Inicio</a>
-                <li class="dropdown">
-                    <a href="" id = "txt" class="dropbtn">Contenidos</a>
-                        <div class="dropdown-content">
-                            <a href="concepto1.html" id = "txt1">CSS3: Estilo Interno y Externo</a>
-                            <a href="concepto2.html" id = "txt1">CCS3: Selectores</a>
-                        </div>
-                </li>
-                <li class="dropdown">
-                    <a href="recursos.html" id = "txt" class="dropbtn">Recursos Multimedia</a>
-                    <div class="dropdown-content">
-                        <a href="recurso1.html" id="txt1">CSS3 Multimedia: Estilo Interno y Externo</a>
-                        <a href="recurso2.html" id="txt1">CSS3 Multimedia: Selectores</a>
-                    </div>
-                </li>
-                <a href="autoevaluacion.html" id = "txt">Autoevaluacion</a>
-                <a href="autor.html" id="txt">Autor</a>
-            </ul>
-        </nav>
-    <section id="main">
-            <section id="seccion">
-                <h2>RECURSO MULTIMEDIA: CSS3 - SELECTORES CSS</h2>
-                <h3 id="subtitulo">CSS3: Selectores CSS (Vídeo)</h3>
-                <center><iframe id = "video" width="600" height="500" src="https://www.youtube.com/embed/9GC_95d-yTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-            </section>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+    <title>OVI Diseños de Sitios Web</title>
+    <link rel="icon" href="img/inicio/iconoIndex.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css "href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <section id = "logo">
+            <a href="https://www.unad.edu.co" target="_blank"><img  class = "logo" src="img/inicio/logoUNAD2.png" alt="Logo"></a>
         </section>
-    </body>
+        <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+        <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+        <h3 id="trtitulo">GRUPO: 301122_59</h3>    
+    </header>
+    <nav id = "menu-h">
+        <ul>
+            <li ><a href="index.html">Inicio</a></li>
+            <li><a href="#">Contenidos</a>
+                <ul class="sbmenu">
+                    <li><a href="concepto1.html">CSS3: Estilos Internos y Externos</a></li>
+                    <li><a href="concepto2.html">CSS3: Selectores</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos Multimedia</a>
+                <ul class="sbmenu">
+                    <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
+                    <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
+                </ul>
+            </li>
+            <li ><a href="autoevaluacion.html">Autoevaluacion</a></li>
+            <li ><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>    
+    <section id="contenedor">
+        <section id="menu-v">
+            <ul>
+                <li ><a href="index.html"><img src="img/inicio/inicio.png">   Inicio</a></li>
+                <li><a href="#"><img src="img/contenidos/contenidos.png">   Contenidos</a>
+                    <ul class="sbmenu">
+                        <li><a href="contenido1.html">CSS3: Estilos Internos y Externos</a></li>
+                        <li><a href="contenido2.html">CSS3: Selectores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="img/recursos/recursos.png">   Recursos Multimedia</a>
+                    <ul class="sbmenu">
+                        <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
+                        <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
+                    </ul>
+                </li>
+                <li ><a href="autoevaluacion.html"><img src="img/autoevaluacion/autoevaluacion.png">   Autoevaluacion</a></li>
+                <li ><a href="autor.html"><img src="img/autor/autor.png">   Autor</a></li>
+            </ul>    
+        </section>
+        <aside id="twitter">
+            <a class="twitter-timeline"  width = "300" height = "800" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+        </aside>
+        <section id="contenido">
+            <h2>RECURSO MULTIMEDIA: CSS3 - SELECTORES CSS</h2>
+            <h3>CSS3: Selectores CSS (Vídeo)</h3>
+            <center><iframe id = "video" width="600" height="500" src="https://www.youtube.com/embed/9GC_95d-yTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>        </section>
+    </section>
+    <footer>
+        Universidad Nacional Abierta y a Distancia - UNAD </br>
+        Derechos Reservados &copy; 2020 </br>
+        Diseñado por: Juan Sebastian Ramirez Hernandez </br>
+        Email: ramirezsebastian40@gmail.com
+    </footer>
+</body>
 </html>

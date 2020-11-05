@@ -1,174 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content ="width=device-width, initial-scale=1">
-        <title>
-            OVI Diseños de Sitios Web
-        </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css "href="css/normalize.css">
-    </head>
-    <body>
-        <header>
-            <img src="img/logoUNAD2.png" alt="imagen">
-            <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-            <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
-            <h3 id="trtitulo">GRUPO: 301122_59</h3>    
-        </header>
-        <nav>
-            <ul>
-                <a href="index.html" id = "txt" >Inicio</a>
-                <li class="dropdown">
-                    <a href="" id = "txt" class="dropbtn">Contenidos</a>
-                        <div class="dropdown-content">
-                            <a href="concepto1.html" id = "txt1">CSS3: Estilo Interno y Externo</a>
-                            <a href="concepto2.html" id = "txt1">CCS3: Selectores</a>
-                        </div>
-                </li>
-                <li class="dropdown">
-                    <a href="recursos.html" id = "txt" class="dropbtn">Recursos Multimedia</a>
-                    <div class="dropdown-content">
-                        <a href="recurso1.html" id="txt1">CSS3 Multimedia: Estilo Interno y Externo</a>
-                        <a href="recurso2.html" id="txt1">CSS3 Multimedia: Selectores</a>
-                    </div>
-                </li>
-                <a href="autoevaluacion.html" id = "txt">Autoevaluacion</a>
-                <a href="autor.html" id="txt">Autor</a>
-            </ul>
-        </nav>
-        <section id="main">      
-            <section id="seccion">
-                <article id="contenidos">
-                    <h2>CSS3: SELECTORES CSS</h2>
-                    <p>
-                        Esta es la definicion de un CSS Selector:
-                    </p>
-                    <p>
-                        Los selectores CSS se utilizan para seleccionar el contenido al que desea aplicar estilo. Los selectores son parte del conjunto de reglas CSS. Los selectores CSS seleccionan elementos HTML de acuerdo con su id, clase, tipo, atributo, etc. Hay varios tipos diferentes de selectores en CSS.
-                    </p>
-                    <p>
-                        Podemos dividir los selectores de CSS en cinco categorías: Simple Selectors, Combinator Selectors, Pseudo-class Selectors, Pseudo-elements Selectors, Attribute Selectors.
-                    </p>
-                    <div class="dpdown">
-                        <p>
-                            Principlamente en este OVI se enseñará la estructura, ejemplos y vídeos relacionados con los selectores simples, basicos o generales del mundo de CSS. Explicando: Element
-                            Selector, Id Selector, Class Selector, Universal Selector y Grouping Selector.
-                        </p>
-                        <div class="dpdown-content">
-                        <p id="pf">MDN contributors. (17 de Julio de 2020). CSS selectors. Obtenido de MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors</a></p>
-                        </div>
-                    </div>
-                    <h3 id="subtitulo">CSS Element Selector</h3>
-                    <p>
-                        El selector de elementos selecciona el elemento HTML por su nombre.
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorElement.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Estructura Selector Element dentro de un codigo CSS (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        Al momento de visualizarse en el navegador se presenta lo siguiente:
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorElement2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Visualizacion de los estilos adicionados en el navegador Element Selector (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <h3 id="subtitulo">CSS Id Selector</h3>
-                    <p>
-                        El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
-                        La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se utiliza para seleccionar un elemento único.
-                        Para seleccionar un elemento con una identificación específica, escriba un carácter de almohadilla (#), seguido de la identificación del elemento.
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorId.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Estructura Id Element dentro de un codigo CSS (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        Al momento de visualizarse en el navegador se presenta lo siguiente:
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorId2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Visualizacion de los estilos adicionados en el navegador Id Selector (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante ID, no se debe empezar con números.
-                    </p>
-                    <h3 id="subtitulo">CSS Class Selector</h3>
-                    <p>
-                        El selector de clases selecciona elementos HTML con un atributo de clase específico.
-                        Para seleccionar elementos con una clase específica, escriba un punto (.), Seguido del nombre de la clase.
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorClass.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Estructura Class Element dentro de un codigo CSS (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        También se puede especificar que solo los elementos HTML específicos se vean afectados por una clase. Los elementos HTML también pueden hacer referencia a más de una clase.
-                    </p>
-                    <p>
-                        Al momento de visualizarse en el navegador se presenta lo siguiente:
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorClass2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Visualizacion de los estilos adicionados en el navegador Class Selector (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante CLASS, no se debe empezar con números.
-                    </p>
-                    <h3 id="subtitulo">CSS Universal Selector</h3>
-                    <p>
-                        El selector universal (*) selecciona todos los elementos HTML de la página.
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorUniversal.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Estructura Universal Element dentro de un codigo CSS (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <p>
-                        Al momento de visualizarse en el navegador se presenta lo siguiente:
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorUniversal2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Visualizacion de los estilos adicionados en el navegador Universal Selector (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <h3 id="subtitulo">CSS Grouping Selector</h3>
-                    <p>
-                        El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo. Será mejor agrupar los selectores para minimizar el código. 
-                        Para agrupar selectores, separe cada selector con una coma.
-                    </p>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorGrouping.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Estructura Grouping Element dentro de un codigo CSS (Propia Autoría)</p>
-                        </div>
-                    </div>
-                    <P> 
-                        Al momento de visualizarse en el navegador se presenta lo siguiente:    
-                    </P>
-                    <div class="dpdown">
-                        <img src="img/ejemplo_CSS_SelectorGrouping2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
-                        <div class="dpdown-content">
-                            <p id="pf">Visualizacion de los estilos adicionados en el navegador Grouping Selector (Propia Autoría)</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+    <title>OVI Diseños de Sitios Web</title>
+    <link rel="icon" href="img/inicio/iconoIndex.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css "href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <section id = "logo">
+            <a href="https://www.unad.edu.co" target="_blank"><img  class = "logo" src="img/inicio/logoUNAD2.png" alt="Logo"></a>
         </section>
-    </body>
+        <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
+        <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
+        <h3 id="trtitulo">GRUPO: 301122_59</h3>    
+    </header>
+    <nav id = "menu-h">
+        <ul>
+            <li ><a href="index.html">Inicio</a></li>
+            <li><a href="#">Contenidos</a>
+                <ul class="sbmenu">
+                    <li><a href="contenido1.html">CSS3: Estilos Internos y Externos</a></li>
+                    <li><a href="contenido2.html">CSS3: Selectores</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos Multimedia</a>
+                <ul class="sbmenu">
+                    <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
+                    <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
+                </ul>
+            </li>
+            <li ><a href="autoevaluacion.html">Autoevaluacion</a></li>
+            <li ><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>    
+    <section id="p2contenedor">
+        <section id="menu-v">
+            <ul>
+                <li ><a href="index.html"><img src="img/inicio/inicio.png">   Inicio</a></li>
+                <li><a href="#"><img src="img/contenidos/contenidos.png">   Contenidos</a>
+                    <ul class="sbmenu">
+                        <li><a href="concepto1.html">CSS3: Estilos Internos y Externos</a></li>
+                        <li><a href="concepto2.html">CSS3: Selectores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="img/recursos/recursos.png">   Recursos Multimedia</a>
+                    <ul class="sbmenu">
+                        <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
+                        <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
+                    </ul>
+                </li>
+                <li ><a href="autoevaluacion.html"><img src="img/autoevaluacion/autoevaluacion.png">   Autoevaluacion</a></li>
+                <li ><a href="autor.html"><img src="img/autor/autor.png">   Autor</a></li>
+            </ul>    
+        </section>
+        <aside id="twitter">
+            <a class="twitter-timeline"  width = "300" height = "800" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+        </aside>
+        <section id="contenido">
+            <h2>CSS3: SELECTORES CSS</h2>
+            <p>
+                Esta es la definicion de un CSS Selector:
+            </p>
+            <p>
+                Los selectores CSS se utilizan para seleccionar el contenido al que desea aplicar estilo. Los selectores son parte del conjunto de reglas CSS. Los selectores CSS seleccionan elementos HTML de acuerdo con su id, clase, tipo, atributo, etc. Hay varios tipos diferentes de selectores en CSS.
+            </p>
+            <p>
+                Podemos dividir los selectores de CSS en cinco categorías: Simple Selectors, Combinator Selectors, Pseudo-class Selectors, Pseudo-elements Selectors, Attribute Selectors.
+            </p>
+            <div class="dpdown">
+                <p>
+                    Principlamente en este OVI se enseñará la estructura, ejemplos y vídeos relacionados con los selectores simples, basicos o generales del mundo de CSS. Explicando: Element
+                    Selector, Id Selector, Class Selector, Universal Selector y Grouping Selector.
+                </p>
+                <div class="dpdown-content">
+                <p id="pf">MDN contributors. (17 de Julio de 2020). CSS selectors. Obtenido de MDN web docs: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors</a></p>
+                </div>
+            </div>
+            <h3>CSS Element Selector</h3>
+            <p>
+                El selector de elementos selecciona el elemento HTML por su nombre.
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorElement.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Estructura Selector Element dentro de un codigo CSS (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                Al momento de visualizarse en el navegador se presenta lo siguiente:
+            </p>         
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorElement2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Visualizacion de los estilos adicionados en el navegador Element Selector (Propia Autoría)</p>
+                </div>
+            </div>
+            <h3>CSS Id Selector</h3>
+            <p>
+                Las hojas de estilos externas, son utilizadas para definir el estilo en varias páginas con el mismo archivo externo CSS, así es posible realizar cambios en este archivo y afectando su presentación incluso para todo el sitio web.
+            </p>
+            <p>
+                Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta "LINK" en la sección "HEAD" del documento HTML, cabe recalcar que para añadir este tipo de estilo CSS, se debe tener el documento en la misma carpeta local en donde se encuentra el documento HTML y demás elementos, como a continuación:
+            </p>
+            <p>
+                El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
+                La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se utiliza para seleccionar un elemento único.
+                Para seleccionar un elemento con una identificación específica, escriba un carácter de almohadilla (#), seguido de la identificación del elemento.
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorId.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Estructura Id Element dentro de un codigo CSS (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                Al momento de visualizarse en el navegador se presenta lo siguiente:
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorId2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Visualizacion de los estilos adicionados en el navegador Id Selector (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante ID, no se debe empezar con números.
+            </p>
+            <h3>CSS Class Selector</h3>
+            <p>
+                El selector de clases selecciona elementos HTML con un atributo de clase específico.
+                Para seleccionar elementos con una clase específica, escriba un punto (.), Seguido del nombre de la clase.
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorClass.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Estructura Class Element dentro de un codigo CSS (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                También se puede especificar que solo los elementos HTML específicos se vean afectados por una clase. Los elementos HTML también pueden hacer referencia a más de una clase.
+            </p>
+            <p>
+                Al momento de visualizarse en el navegador se presenta lo siguiente:
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorClass2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Visualizacion de los estilos adicionados en el navegador Class Selector (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                <b>Nota:</b> Es importante resaltar que respetando la sintaxis de este tipo de lenguaje, para la nomenclatura de estos selectores mediante CLASS, no se debe empezar con números.
+            </p>
+            <h3>CSS Universal Selector</h3>
+            <p>
+                El selector universal (*) selecciona todos los elementos HTML de la página.
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorUniversal.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Estructura Universal Element dentro de un codigo CSS (Propia Autoría)</p>
+                </div>
+            </div>
+            <p>
+                Al momento de visualizarse en el navegador se presenta lo siguiente:
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorUniversal2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Visualizacion de los estilos adicionados en el navegador Universal Selector (Propia Autoría)</p>
+                </div>
+            </div>
+            <h3>CSS Grouping Selector</h3>
+            <p>
+                El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo. Será mejor agrupar los selectores para minimizar el código. 
+                Para agrupar selectores, separe cada selector con una coma.
+            </p>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorGrouping.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                    <p id="pf">Estructura Grouping Element dentro de un codigo CSS (Propia Autoría)</p>
+                </div>
+            </div>
+            <P> 
+                Al momento de visualizarse en el navegador se presenta lo siguiente:    
+            </P>
+            <div class="dpdown">
+                <img src="img/contenidos/contenido2/ejemplo_CSS_SelectorGrouping2.PNG" alt="imagen" style = "max-width:100%;height:auto;">
+                <div class="dpdown-content">
+                <p id="pf">Visualizacion de los estilos adicionados en el navegador Grouping Selector (Propia Autoría)</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        Universidad Nacional Abierta y a Distancia - UNAD </br>
+        Derechos Reservados &copy; 2020 </br>
+        Diseñado por: Juan Sebastian Ramirez Hernandez </br>
+        Email: ramirezsebastian40@gmail.com
+    </footer>
+</body>
 </html>
