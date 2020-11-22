@@ -109,25 +109,25 @@ header{
 #contenedor {
     max-width: 100%;
     min-height: 875px;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 #pcontenedor {
     max-width: 100%;
     min-height: 2900px;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 #p2contenedor {
     max-width: 100%;
     min-height: 4600px;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 #p3contenedor {
     max-width: 100%;
     min-height: 1300px;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 #twitter {
@@ -176,7 +176,6 @@ header{
 
 #menu-v ul ul {
     display: none;
-    position: right;
 }
 
 #menu-v ul li:hover ul {
