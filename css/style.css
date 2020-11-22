@@ -185,6 +185,28 @@ header{
 }
 /*ESTILO PARA MENU VERTICAL*/
 
+/*ESTILO PARA MAPA SITIO*/
+ol {
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+ol ul {
+    color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ol a {
+    color: white;
+    list-style: none;
+}
+/*ESTILO PARA MAPA SITIO*/
+
 /*ESTILO PARA CONTENIDO*/
 #contenido {
     width: 60%;
