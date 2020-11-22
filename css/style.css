@@ -1,8 +1,8 @@
 /*ESTILO PARA TODO HTML*/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 /*ESTILO PARA TODO HTML*/
 
@@ -66,6 +66,7 @@ header{
 /*ESTILO PARA HEADER*/
 
 /*ESTILO PARA MENU HORIZONTAL*/
+
 #menu-h {
     max-width: 100%;
     min-height: auto;
