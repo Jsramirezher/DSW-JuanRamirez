@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="OVI,Diseños de Sitios Web, UNAD, CSS3, Estilos, Selectores, GitHub" />
-    <meta name="author" content="Juan Sebastian Ramirez Hernandez, ramirezsebastian40@gmail.com" />
-    <meta name="description" content="Sitio web con formato HTML5, CSS3 entre otros sistemas, para involucrar tematicas de aprendizaje sobre: CSS3" />
-    <meta name="viewport" content ="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>OVI Diseños de Sitios Web</title>
-    <link rel="icon" href="img/inicio/iconoIndex.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css "href="css/normalize.css">
+<meta charset="UTF-8">
+<title>Simulación de Incidente de Seguridad</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contenedor {
+    margin-top: 15%;
+}
+
+h1 {
+    font-size: 48px;
+    animation: parpadeo 1s infinite alternate;
+}
+
+.mensaje {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.submensaje {
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #00ff00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+@keyframes parpadeo {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+}
+
+/* Fondo tipo "Matrix" */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <section id = "logo">
-            <a href="https://www.unad.edu.co" target="_blank"><img  class = "logo" src="img/inicio/logoUNAD2.png" alt="Logo"></a>
-        </section>
-        <h1 id="titulo">CSS3: ESTILOS INTERNOS, EXTERNOS Y SELECTORES CSS</h1>
-        <h2 id="sbtitulo">OVI DISEÑOS DE SITIOS WEB</h2>
-        <h3 id="trtitulo">GRUPO: 301122_59</h3>    
-    </header>
-    <nav id = "menu-h">
-        <ul>
-            <li ><a href="index.html">Inicio</a></li>
-            <li ><a href="mapaSitio.html">Mapa Sitio</a></li>
-            <li><a href="#">Contenidos</a>
-                <ul class="sbmenu">
-                    <li><a href="concepto1.html">CSS3: Estilos Internos y Externos</a></li>
-                    <li><a href="concepto2.html">CSS3: Selectores</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Recursos Multimedia</a>
-                <ul class="sbmenu">
-                    <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
-                    <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Autoevaluacion</a>
-                <ul class="sbmenu">
-                    <li><a href="autoevaluacion1.html">Autoevaluacion: Estilos Internos y Externos</a></li>
-                    <li><a href="autoevaluacion2.html">Autoevaluacion: Selectores</a></li>
-                    <li><a href="autoevaluacion.html">Evaluacion Sitio</a></li>
-                </ul>
-            </li>
-            <li ><a href="autor.html">Autor</a></li>
-        </ul>
-    </nav>    
-    <section id="p4contenedor">
-        <section id="menu-v">
-            <ul>
-                <li ><a href="index.html"><img src="img/inicio/inicio.png">   Inicio</a></li>
-                <li><a href="mapaSitio.html"><img src="img/inicio/mapaSitio.png">   Mapa Sitio</a></li>
-                <li><a href="#"><img src="img/contenidos/contenidos.png">   Contenidos</a>
-                    <ul class="sbmenu">
-                        <li><a href="concepto1.html">CSS3: Estilos Internos y Externos</a></li>
-                        <li><a href="concepto2.html">CSS3: Selectores</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><img src="img/recursos/recursos.png">   Recursos Multimedia</a>
-                    <ul class="sbmenu">
-                        <li><a href="recurso1.html">CSS3 Multimedia: Estilos Internos y Externos</a></li>
-                        <li><a href="recurso2.html">CSS3 Multimedia: Selectores</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><img src="img/autoevaluacion/autoevaluacion.png">   Autoevaluacion</a>
-                    <ul class="sbmenu">
-                        <li><a href="autoevaluacion1.html">Autoevaluacion: Estilos Internos y Externos</a></li>
-                        <li><a href="autoevaluacion2.html">Autoevaluacion: Selectores</a></li>
-                        <li><a href="autoevaluacion.html">Evaluacion Sitio</a></li>
-                    </ul>
-                </li>
-                <li ><a href="autor.html"><img src="img/autor/autor.png">   Autor</a></li>
-            </ul>    
-        </section>
-        <aside id="twitter">
-            <a class="twitter-timeline"  width = "300" height = "800" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
-        </aside>
-        <section id="contenido">
-            <h2>Autor</h2>
-            <div class="container">
-                <center><img src="img/autor/fotoPerfil.png" alt="imagen"></center>
-                <div class="overlay">
-                  <div class="text">¡HOLA! SOY SEBASTIAN =)</div>
-                </div>
-            </div>  
-            <p>
-                Nombre: Juan Sebastian Ramirez Hernandez
-            </p>
-            <p>
-                Código: 1007576037
-            </p>
-            <p>
-                Programa Academico: Ingeniería de Sistemas
-            </p>
-            <p>
-                Correo Electrónico: ramirezsebastian40@gmail.com
-            </p>
-            <p>
-                Skype: live:.cid.c9e49347b9a5317f
-            </p>
-            <h2>Plan de Mejoramiento del Sitio Web</h2>
-            <center><iframe width="600" height="500" src="https://www.youtube.com/embed/NWbBbT-cnKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-        </section>
-    </section>
-    <footer>
-        <p>
-            <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjsramirezher.github.io%2FDSW-JuanRamirez%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=">
-                <img style="border:0;width:90px;height:40px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!"/>
-            </a>
-        </p>
-        Universidad Nacional Abierta y a Distancia - UNAD </br>
-        Derechos Reservados &copy; 2020 </br>
-        Diseñado por: Juan Sebastian Ramirez Hernandez </br>
-        Email: ramirezsebastian40@gmail.com
-    </footer>
+
+<canvas id="matrix"></canvas>
+
+<div class="contenedor">
+    <h1>SISTEMA COMPROMETIDO</h1>
+
+    <p class="mensaje">
+        Esta es una simulación controlada de un incidente de seguridad informática.
+    </p>
+
+    <p class="submensaje">
+        Ningún sistema real ha sido vulnerado. Ejercicio de concienciación institucional.
+    </p>
+
+    <button onclick="restaurar()">Finalizar simulación</button>
+</div>
+
+<script>
+/* ===== EFECTO MATRIX ===== */
+const canvas = document.getElementById("matrix");
+const ctx = canvas.getContext("2d");
+
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
+const letras = "01";
+const fontSize = 16;
+const columnas = canvas.width / fontSize;
+const gotas = [];
+
+for (let x = 0; x < columnas; x++) {
+    gotas[x] = 1;
+}
+
+function dibujar() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "#0F0";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < gotas.length; i++) {
+        const texto = letras.charAt(Math.floor(Math.random() * letras.length));
+        ctx.fillText(texto, i * fontSize, gotas[i] * fontSize);
+
+        if (gotas[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            gotas[i] = 0;
+        }
+        gotas[i]++;
+    }
+}
+
+setInterval(dibujar, 33);
+
+/* ===== SIMULACIÓN DE ALERTAS ===== */
+setTimeout(() => {
+    console.log("ALERTA: Acceso no autorizado detectado.");
+}, 2000);
+
+setTimeout(() => {
+    console.log("ALERTA: Integridad del sistema comprometida.");
+}, 4000);
+
+/* ===== RESTAURACIÓN ===== */
+function restaurar() {
+    document.body.innerHTML = `
+        <div style="margin-top:20%; font-family:Arial; text-align:center;">
+            <h1 style="color:green;">Sistema Restaurado</h1>
+            <p>La simulación ha finalizado correctamente.</p>
+            <p>Se recomienda iniciar análisis post-incidente conforme a políticas institucionales.</p>
+        </div>
+    `;
+}
+</script>
+
 </body>
 </html>
