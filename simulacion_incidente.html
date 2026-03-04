@@ -2,45 +2,59 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simulación de Incidente de Seguridad</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: black;
     color: #00ff00;
     font-family: "Courier New", monospace;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     text-align: center;
+    overflow: hidden;
 }
 
 .contenedor {
-    margin-top: 15%;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: clamp(28px, 6vw, 48px);
     animation: parpadeo 1s infinite alternate;
+    margin-bottom: 20px;
 }
 
 .mensaje {
-    font-size: 22px;
-    margin-top: 20px;
+    font-size: clamp(16px, 4vw, 22px);
+    margin-bottom: 15px;
 }
 
 .submensaje {
-    font-size: 16px;
+    font-size: clamp(14px, 3.5vw, 16px);
     color: red;
-    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 button {
-    margin-top: 30px;
-    padding: 12px 25px;
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
     background-color: #00ff00;
     border: none;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -53,7 +67,7 @@ button:hover {
     to { opacity: 0.3; }
 }
 
-/* Fondo tipo "Matrix" */
+/* Canvas fondo */
 canvas {
     position: fixed;
     top: 0;
@@ -71,32 +85,40 @@ canvas {
     <h1>SISTEMA COMPROMETIDO</h1>
 
     <p class="mensaje">
-        Esta es una simulación controlada de un incidente de seguridad informática.
+        Simulación controlada de incidente de seguridad informática.
     </p>
 
     <p class="submensaje">
-        Ningún sistema real ha sido vulnerado. Ejercicio de concienciación institucional.
+        Ningún sistema real ha sido vulnerado. Ejercicio institucional.
     </p>
 
     <button onclick="restaurar()">Finalizar simulación</button>
 </div>
 
 <script>
-/* ===== EFECTO MATRIX ===== */
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+function ajustarCanvas() {
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+}
+ajustarCanvas();
+window.addEventListener("resize", ajustarCanvas);
 
 const letras = "01";
-const fontSize = 16;
-const columnas = canvas.width / fontSize;
-const gotas = [];
+let fontSize = 16;
+let columnas = canvas.width / fontSize;
+let gotas = [];
 
-for (let x = 0; x < columnas; x++) {
-    gotas[x] = 1;
+function iniciarMatrix() {
+    columnas = canvas.width / fontSize;
+    gotas = [];
+    for (let x = 0; x < columnas; x++) {
+        gotas[x] = 1;
+    }
 }
+iniciarMatrix();
 
 function dibujar() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
@@ -118,7 +140,12 @@ function dibujar() {
 
 setInterval(dibujar, 33);
 
-/* ===== SIMULACIÓN DE ALERTAS ===== */
+window.addEventListener("resize", () => {
+    ajustarCanvas();
+    iniciarMatrix();
+});
+
+/* Simulación de alertas */
 setTimeout(() => {
     console.log("ALERTA: Acceso no autorizado detectado.");
 }, 2000);
@@ -127,17 +154,24 @@ setTimeout(() => {
     console.log("ALERTA: Integridad del sistema comprometida.");
 }, 4000);
 
-/* ===== RESTAURACIÓN ===== */
+/* Restauración */
 function restaurar() {
     document.body.innerHTML = `
-        <div style="margin-top:20%; font-family:Arial; text-align:center;">
-            <h1 style="color:green;">Sistema Restaurado</h1>
-            <p>La simulación ha finalizado correctamente.</p>
-            <p>Se recomienda iniciar análisis post-incidente conforme a políticas institucionales.</p>
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;font-family:Arial;padding:20px;">
+            <div>
+                <h1 style="color:green;">Sistema Restaurado</h1>
+                <p>La simulación ha finalizado correctamente.</p>
+                <p>Proceder con análisis post-incidente conforme a políticas del SGSI.</p>
+            </div>
         </div>
     `;
 }
 </script>
 
 </body>
+</html>
+</script>
+
+</body>
+
 </html>
