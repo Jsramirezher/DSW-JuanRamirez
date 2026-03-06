@@ -3,175 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulación de Incidente de Seguridad</title>
+
+<title>Simulación de Comprobante</title>
 
 <style>
-* {
-    box-sizing: border-box;
+
+body{
+font-family: Arial, sans-serif;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: #00ff00;
-    font-family: "Courier New", monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    overflow: hidden;
+.tarjeta{
+
+background:white;
+width:360px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+padding:25px;
+position:relative;
+
 }
 
-.contenedor {
-    padding: 20px;
-    max-width: 600px;
-    width: 90%;
+.simulacion{
+position:absolute;
+top:10px;
+right:10px;
+background:red;
+color:white;
+font-size:11px;
+padding:4px 8px;
+border-radius:4px;
 }
 
-h1 {
-    font-size: clamp(28px, 6vw, 48px);
-    animation: parpadeo 1s infinite alternate;
-    margin-bottom: 20px;
+.titulo{
+text-align:center;
+font-weight:bold;
+margin-bottom:20px;
+font-size:20px;
 }
 
-.mensaje {
-    font-size: clamp(16px, 4vw, 22px);
-    margin-bottom: 15px;
+.monto{
+font-size:32px;
+text-align:center;
+color:#00a650;
+margin-bottom:20px;
 }
 
-.submensaje {
-    font-size: clamp(14px, 3.5vw, 16px);
-    color: red;
-    margin-bottom: 25px;
+.linea{
+display:flex;
+justify-content:space-between;
+margin:8px 0;
+font-size:14px;
 }
 
-button {
-    width: 100%;
-    max-width: 300px;
-    padding: 14px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #00ff00;
-    border: none;
-    cursor: pointer;
+.footer{
+margin-top:20px;
+font-size:12px;
+text-align:center;
+color:gray;
 }
 
-button:hover {
-    background-color: white;
+.alerta{
+margin-top:15px;
+background:#fff3cd;
+padding:10px;
+font-size:12px;
+border-radius:6px;
 }
 
-@keyframes parpadeo {
-    from { opacity: 1; }
-    to { opacity: 0.3; }
-}
-
-/* Canvas fondo */
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 </style>
 </head>
 
 <body>
 
-<canvas id="matrix"></canvas>
+<div class="tarjeta">
 
-<div class="contenedor">
-    <h1>SISTEMA COMPROMETIDO</h1>
+<div class="simulacion">SIMULACIÓN</div>
 
-    <p class="mensaje">
-        Simulación controlada de incidente de seguridad informática.
-    </p>
+<div class="titulo">
+Comprobante de Transferencia
+</div>
 
-    <p class="submensaje">
-        Ningún sistema real ha sido vulnerado. Ejercicio institucional.
-    </p>
+<div class="monto">
+$150.000
+</div>
 
-    <button onclick="restaurar()">Finalizar simulación</button>
+<div class="linea">
+<span>Estado:</span>
+<span>Aprobada</span>
+</div>
+
+<div class="linea">
+<span>Fecha:</span>
+<span id="fecha"></span>
+</div>
+
+<div class="linea">
+<span>Referencia:</span>
+<span id="ref"></span>
+</div>
+
+<div class="linea">
+<span>Origen:</span>
+<span>Pedrito Plazas</span>
+</div>
+
+<div class="linea">
+<span>Destino:</span>
+<span>Oficina TIC</span>
+</div>
+
+<div class="alerta">
+Este comprobante forma parte de un ejercicio de concienciación sobre fraude digital e ingeniería social.
+</div>
+
+<div class="footer">
+Ejercicio de capacitación en seguridad informática
+</div>
+
 </div>
 
 <script>
-const canvas = document.getElementById("matrix");
-const ctx = canvas.getContext("2d");
 
-function ajustarCanvas() {
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-}
-ajustarCanvas();
-window.addEventListener("resize", ajustarCanvas);
+function generarReferencia(){
 
-const letras = "01";
-let fontSize = 16;
-let columnas = canvas.width / fontSize;
-let gotas = [];
+return "TX-"+Math.floor(Math.random()*999999999);
 
-function iniciarMatrix() {
-    columnas = canvas.width / fontSize;
-    gotas = [];
-    for (let x = 0; x < columnas; x++) {
-        gotas[x] = 1;
-    }
-}
-iniciarMatrix();
-
-function dibujar() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = "#0F0";
-    ctx.font = fontSize + "px monospace";
-
-    for (let i = 0; i < gotas.length; i++) {
-        const texto = letras.charAt(Math.floor(Math.random() * letras.length));
-        ctx.fillText(texto, i * fontSize, gotas[i] * fontSize);
-
-        if (gotas[i] * fontSize > canvas.height && Math.random() > 0.975) {
-            gotas[i] = 0;
-        }
-        gotas[i]++;
-    }
 }
 
-setInterval(dibujar, 33);
+document.getElementById("ref").innerText = generarReferencia();
 
-window.addEventListener("resize", () => {
-    ajustarCanvas();
-    iniciarMatrix();
-});
+const fecha = new Date();
+document.getElementById("fecha").innerText =
+fecha.toLocaleDateString()+" "+fecha.toLocaleTimeString();
 
-/* Simulación de alertas */
-setTimeout(() => {
-    console.log("ALERTA: Acceso no autorizado detectado.");
-}, 2000);
-
-setTimeout(() => {
-    console.log("ALERTA: Integridad del sistema comprometida.");
-}, 4000);
-
-/* Restauración */
-function restaurar() {
-    document.body.innerHTML = `
-        <div style="display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;font-family:Arial;padding:20px;">
-            <div>
-                <h1 style="color:green;">Sistema Restaurado</h1>
-                <p>La simulación ha finalizado correctamente.</p>
-                <p>Proceder con análisis post-incidente conforme a políticas del SGSI.</p>
-            </div>
-        </div>
-    `;
-}
 </script>
 
 </body>
-</html>
-</script>
-
-</body>
-
 </html>
