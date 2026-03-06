@@ -1,79 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Simulación de Comprobante</title>
+<title>Registro de Evento de Seguridad</title>
 
 <style>
 
+:root{
+--verde:#1b7f3b;
+--azul:#1b4f9c;
+--blanco:#ffffff;
+--gris:#f4f4f4;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
 body{
-font-family: Arial, sans-serif;
-background:#f2f2f2;
+
+font-family:Arial, Helvetica, sans-serif;
+background:var(--gris);
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-margin:0;
-}
-
-.tarjeta{
-
-background:white;
-width:360px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
-padding:25px;
-position:relative;
+min-height:100vh;
+padding:20px;
 
 }
 
-.simulacion{
-position:absolute;
-top:10px;
-right:10px;
-background:red;
+.card{
+
+width:100%;
+max-width:420px;
+background:var(--blanco);
+border-radius:14px;
+box-shadow:0 8px 30px rgba(0,0,0,0.2);
+overflow:hidden;
+
+}
+
+/* Encabezado institucional */
+
+.header{
+
+background:linear-gradient(90deg,var(--verde),var(--azul));
 color:white;
-font-size:11px;
-padding:4px 8px;
-border-radius:4px;
-}
-
-.titulo{
-text-align:center;
+padding:18px;
+font-size:18px;
 font-weight:bold;
-margin-bottom:20px;
-font-size:20px;
+text-align:center;
+
 }
 
-.monto{
-font-size:32px;
+/* Estado */
+
+.estado{
+
+color:#c62828;
+font-weight:bold;
 text-align:center;
-color:#00a650;
-margin-bottom:20px;
+padding:15px;
+
+}
+
+/* QR */
+
+.qr{
+
+display:flex;
+justify-content:center;
+padding:10px;
+
+}
+
+.qr img{
+
+width:140px;
+max-width:60%;
+
+}
+
+/* Información */
+
+.info{
+
+padding:15px;
+
 }
 
 .linea{
+
 display:flex;
 justify-content:space-between;
 margin:8px 0;
 font-size:14px;
+flex-wrap:wrap;
+
 }
 
-.footer{
-margin-top:20px;
-font-size:12px;
-text-align:center;
-color:gray;
+.titulo{
+
+color:#666;
+
 }
+
+.valor{
+
+font-weight:bold;
+color:#333;
+
+}
+
+/* alerta */
 
 .alerta{
+
 margin-top:15px;
-background:#fff3cd;
+background:#e8f5e9;
+border-left:4px solid var(--verde);
 padding:10px;
-font-size:12px;
-border-radius:6px;
+font-size:13px;
+border-radius:5px;
+
+}
+
+/* botón */
+
+.boton{
+
+margin-top:20px;
+background:var(--verde);
+color:white;
+border:none;
+padding:14px;
+width:100%;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.2s;
+
+}
+
+.boton:hover{
+
+background:var(--azul);
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width:480px){
+
+.header{
+font-size:16px;
+padding:14px;
+}
+
+.linea{
+font-size:13px;
+}
+
+.qr img{
+width:120px;
+}
+
 }
 
 </style>
@@ -81,62 +177,75 @@ border-radius:6px;
 
 <body>
 
-<div class="tarjeta">
+<div class="card">
 
-<div class="simulacion">SIMULACIÓN</div>
-
-<div class="titulo">
-Comprobante de Transferencia
+<div class="header">
+Alcaldía Municipal de Pitalito  
+Registro de Seguridad Informática
 </div>
 
-<div class="monto">
-$150.000
+<div class="estado">
+⚠ Incidente detectado
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=seguridad-informatica">
+</div>
+
+<div class="info">
+
+<div class="linea">
+<div class="titulo">Tipo de evento</div>
+<div class="valor">Intento de phishing</div>
 </div>
 
 <div class="linea">
-<span>Estado:</span>
-<span>Aprobada</span>
+<div class="titulo">Sistema afectado</div>
+<div class="valor">Correo institucional</div>
 </div>
 
 <div class="linea">
-<span>Fecha:</span>
-<span id="fecha"></span>
+<div class="titulo">Usuario</div>
+<div class="valor">funcionario@pitalito.gov.co</div>
 </div>
 
 <div class="linea">
-<span>Referencia:</span>
-<span id="ref"></span>
+<div class="titulo">Nivel de riesgo</div>
+<div class="valor">ALTO</div>
 </div>
 
 <div class="linea">
-<span>Origen:</span>
-<span>Pedrito Plazas</span>
+<div class="titulo">Fecha</div>
+<div class="valor" id="fecha"></div>
 </div>
 
 <div class="linea">
-<span>Destino:</span>
-<span>Oficina TIC</span>
+<div class="titulo">ID incidente</div>
+<div class="valor" id="id"></div>
 </div>
 
 <div class="alerta">
-Este comprobante forma parte de un ejercicio de concienciación sobre fraude digital e ingeniería social.
+
+Ejercicio de capacitación en seguridad informática.  
+Recuerde verificar siempre la información en los sistemas oficiales antes de confiar en capturas o comprobantes.
+
 </div>
 
-<div class="footer">
-Ejercicio de capacitación en seguridad informática
+<button class="boton">
+Cerrar registro
+</button>
+
 </div>
 
 </div>
 
 <script>
 
-function generarReferencia(){
-
-return "TX-"+Math.floor(Math.random()*999999999);
-
+function generarID(){
+return "SEC-"+Math.floor(Math.random()*99999999);
 }
 
-document.getElementById("ref").innerText = generarReferencia();
+document.getElementById("id").innerText = generarID();
 
 const fecha = new Date();
 document.getElementById("fecha").innerText =
